@@ -12,3 +12,15 @@ for i in userPush:
         numbers += i
 print('Number of letters per line: ', len(letters))
 print('Number of digits per line: ', len(numbers))
+
+print('*' * 10, 'TASK 2', 10 * '*')
+
+symbol = ''
+
+userPush = input('Enter line: ')
+search = input('Enter character to search string: ')
+
+for i in userPush:
+    if i.count(search):
+        symbol +=i
+print(f'Quantity symbols {search} in line: ', len(symbol))
