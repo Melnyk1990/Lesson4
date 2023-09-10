@@ -24,3 +24,13 @@ for i in userPush:
     if i.count(search):
         symbol +=i
 print(f'Quantity symbols {search} in line: ', len(symbol))
+
+
+print('*' * 10, 'TASK 3', 10 * '*')
+
+userPush = input('Enter line: ')
+search = input('Enter a search word: ')
+replacement = input('Enter a replacement word: ')
+
+new = userPush.replace(search, replacement)
+print('New line: ', new)
