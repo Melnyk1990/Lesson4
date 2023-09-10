@@ -13,6 +13,8 @@ for i in userPush:
 print('Number of letters per line: ', len(letters))
 print('Number of digits per line: ', len(numbers))
 
+##################################################################
+
 print('*' * 10, 'TASK 2', 10 * '*')
 
 symbol = ''
@@ -25,6 +27,8 @@ for i in userPush:
         symbol +=i
 print(f'Quantity symbols {search} in line: ', len(symbol))
 
+##############################################################################
+
 
 print('*' * 10, 'TASK 3', 10 * '*')
 
@@ -34,6 +38,8 @@ replacement = input('Enter a replacement word: ')
 
 new = userPush.replace(search, replacement)
 print('New line: ', new)
+
+#######################################################################################
 
 print('*' * 10, 'TASK 4', 10 * '*')
 
