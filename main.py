@@ -54,3 +54,35 @@ print('6) All characters with unpaired indices: ', userPush[1: :3])
 print('7) Print all characters in reverse order: ', userPush[: :-1])
 print('8) Print characters in reverse order one after another: ', userPush[ : :-2])
 print('9) Length of the eighth (8) line : ', len(userPush[ : :-2]))
+###############################################################################################
+###############################################################################################
+
+print('*'* 10, 'Additional task', 10 * '*')
+
+numbers = ''
+punctuationMarks = ''
+exclamationMarks = ''
+userPush = input('Enter text: ')
+print()
+sepo = userPush.split('. ')
+for i in sepo:
+    print(i.capitalize(), end='. ')
+for i in userPush:
+    if i.isnumeric():
+        numbers += i
+    elif i == ' - ':
+        punctuationMarks += i
+    elif i == ';':
+        punctuationMarks += i
+    elif i == ':':
+        punctuationMarks += i
+    elif i == ',':
+        punctuationMarks += i
+    elif i == '!':
+        exclamationMarks += i
+
+print()
+print()
+print('Quantity numbers in the text: ', len(numbers))
+print('Quantity punctuation marks (, ; : - ) in the text: ', len(punctuationMarks))
+print('Quantity exclamation marks (!) in the text: ', len(exclamationMarks))
